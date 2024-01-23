@@ -2,21 +2,49 @@ import { useState, useEffect } from "react";
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 
 const Projects = () => {
-    const [projects, setProjects] = useState(null);
-    const [projectLength, setProjectLength] = useState(0);
     const [projectCard, setProjectCard] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
 
-    useEffect(() => {
-        fetch('http://localhost:8000/projects')
-        .then(res => {
-            return res.json();
-        })
-        .then(data => {
-            setProjects(data);
-            setProjectLength(Math.floor(data.length / 2));
-        })
-    }, []);
+    const projects = [
+        {
+          "projectpic": "probiotic-webdatabase.png",
+          "projectname": "Probiotics Web Database",
+          "projectbrief": "The purpose of this database is to serve as a source of information for both healthcare professionals and public to search up information regarding products containing probiotics.",
+          "projectdescription": "The purpose of this database is to serve as a source of information for both healthcare professionals and public to search up information regarding products containing probiotics.",
+          "projectstack": "HTML CSS Javascript PHP MySQL",
+          "projectgitlink": "/",
+          "id": 1
+        },
+        {
+          "projectpic": "work-in-progress.png",
+          "projectname": "Work in progress",
+          "projectbrief": "To be updated...",
+          "projectdescription": "To be updated...",
+          "projectstack": "",
+          "projectgitlink": "/",
+          "id": 2
+        },
+        {
+          "projectpic": "work-in-progress.png",
+          "projectname": "Work in progress",
+          "projectbrief": "To be updated...",
+          "projectdescription": "To be updated...",
+          "projectstack": "",
+          "projectgitlink": "/",
+          "id": 3
+        },
+        {
+          "projectpic": "work-in-progress.png",
+          "projectname": "Work in progress",
+          "projectbrief": "To be updated...",
+          "projectdescription": "To be updated...",
+          "projectstack": "",
+          "projectgitlink": "/",
+          "id": 4
+        }
+      ];
+    
+    const projectLength = Math.floor(projects.length / 2);
 
     const project1 = projects ? projects.filter((project, index) => index === 0 || index === projectLength-1) : [];
     const project2 = projects ? projects.filter((project, index) => index === projectLength || index === projects.length-1) : [];
@@ -63,7 +91,6 @@ const Projects = () => {
         }
     }
 
-
     return (
         <div id="project-container">
             <div id="project-header">PROJECTS</div>
@@ -79,7 +106,7 @@ const Projects = () => {
                         createProjectCard(project.projectpic, project.projectname, project.projectbrief, project.projectdescription, project.projectstack, project.projectgitlink)
                     )}
                     <div id="view-all">
-                        <div id="view-all-projects">View All Projects</div>
+                        <div id="view-all-projects">Contact me for more info!</div>
                     </div>
                 </div>
             </div>
