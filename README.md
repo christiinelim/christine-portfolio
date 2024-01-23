@@ -68,3 +68,60 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<!-- <div id="project-container">
+            <div id="project-header">PROJECTS</div>
+            <div id="projects">
+                <div id="project-row">
+                    <div id="project-description">What I have worked on</div>
+                    <div className="project-card">
+                        <div className="project-card-image">
+                            <img src={require('./images/project/probiotic-webdatabase.png')} />
+                        </div>
+                        <div className="project-card-title">
+                            Probiotics Web Database
+                        </div>
+                        <div className="project-card-description">
+                            The purpose of this database is to serve as a source of information for both healthcare professionals and public to search up information regarding products containing probiotics.
+                        </div>
+                    </div>
+                    <div className="project-card">
+                        <div className="project-card-image-progress">
+                            <img src={require('./images/project/work-in-progress.png')}/>
+                        </div>
+                        <div className="project-card-title">
+                            Work in progress
+                        </div>
+                        <div className="project-card-description">
+                            To be updated...
+                        </div>
+                    </div>
+                </div>
+                <div id="project-row">
+                    <div className="project-card">
+                        <div className="project-card-image-progress">
+                            <img src={require('./images/project/work-in-progress.png')}/>
+                        </div>
+                        <div className="project-card-title">
+                            Work in progress
+                        </div>
+                        <div className="project-card-description">
+                            To be updated...
+                        </div>
+                    </div>
+                    <div className="project-card">
+                        <div className="project-card-image-progress">
+                            <img src={require('./images/project/work-in-progress.png')}/>
+                        </div>
+                        <div className="project-card-title">
+                            Work in progress
+                        </div>
+                        <div className="project-card-description">
+                            To be updated...
+                        </div>
+                    </div>
+                    <div id="view-all-projects">View All Projects</div>
+                </div>
+            </div>
+        </div> -->

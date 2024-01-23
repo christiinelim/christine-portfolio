@@ -1,0 +1,109 @@
+{
+    "skill": [
+      {
+        "skillcategory": "front-end",
+        "skillspic": "css.png",
+        "skillsname": "CSS",
+        "id": 1
+      },
+      {
+        "skillcategory": "front-end",
+        "skillspic": "html.png",
+        "skillsname": "HTML",
+        "id": 2
+      },
+      {
+        "skillcategory": "working",
+        "skillspic": "java.png",
+        "skillsname": "Java",
+        "id": 3
+      },
+      {
+        "skillcategory": "front-end",
+        "skillspic": "javascript.png",
+        "skillsname": "Javascript",
+        "id": 4
+      },
+      {
+        "skillcategory": "working",
+        "skillspic": "mongodb.png",
+        "skillsname": "MongoDB",
+        "id": 5
+      },
+      {
+        "skillcategory": "back-end",
+        "skillspic": "mysql.png",
+        "skillsname": "MySQL",
+        "id": 6
+      },
+      {
+        "skillcategory": "working",
+        "skillspic": "nodejs.png",
+        "skillsname": "NodeJS",
+        "id": 7
+      },
+      {
+        "skillcategory": "back-end",
+        "skillspic": "php.png",
+        "skillsname": "PHP",
+        "id": 8
+      },
+      {
+        "skillcategory": "both",
+        "skillspic": "python.png",
+        "skillsname": "Python",
+        "id": 9
+      },
+      {
+        "skillcategory": "front-end",
+        "skillspic": "react.png",
+        "skillsname": "React",
+        "id": 10
+      },
+      {
+        "skillcategory": "working",
+        "skillspic": "vuejs.png",
+        "skillsname": "VueJS",
+        "id": 11
+      }
+    ],
+
+    "projects": [
+      {
+        "projectpic": "probiotic-webdatabase.png",
+        "projectname": "Probiotics Web Database",
+        "projectbrief": "The purpose of this database is to serve as a source of information for both healthcare professionals and public to search up information regarding products containing probiotics.",
+        "projectdescription": "The purpose of this database is to serve as a source of information for both healthcare professionals and public to search up information regarding products containing probiotics.",
+        "projectstack": "HTML CSS Javascript PHP MySQL",
+        "projectgitlink": "/",
+        "id": 1
+      },
+      {
+        "projectpic": "work-in-progress.png",
+        "projectname": "Work in progress",
+        "projectbrief": "To be updated...",
+        "projectdescription": "To be updated...",
+        "projectstack": "",
+        "projectgitlink": "/",
+        "id": 2
+      },
+      {
+        "projectpic": "work-in-progress.png",
+        "projectname": "Work in progress",
+        "projectbrief": "To be updated...",
+        "projectdescription": "To be updated...",
+        "projectstack": "",
+        "projectgitlink": "/",
+        "id": 3
+      },
+      {
+        "projectpic": "work-in-progress.png",
+        "projectname": "Work in progress",
+        "projectbrief": "To be updated...",
+        "projectdescription": "To be updated...",
+        "projectstack": "",
+        "projectgitlink": "/",
+        "id": 4
+      }
+    ]
+}
