@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
+/* green: #6f7566 */
+
 @media (min-width: 901px) {
   /* base styles */
   body{
@@ -15,6 +17,10 @@
   }
 
   /* navbar */
+  #nav-bar-small{
+    display: none !important;
+  }
+
   .nav{
     position: sticky;
     top: 0px;
@@ -45,6 +51,10 @@
   #menu-icon{
     display: none;
     visibility: hidden;
+  }
+
+  .ant-float-btn-icon{
+    color: #696969 !important;
   }
 
   /* hero image */
@@ -160,6 +170,7 @@
     font-size: 30px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #about-body{
@@ -190,6 +201,7 @@
     font-size: 30px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #skills-filter select{
@@ -253,10 +265,6 @@
     margin: 0px 160px;
   }
 
-  #projects{
-    display: flex;
-  }
-
   #project-header{
     display: flex;
     justify-content: center;
@@ -264,6 +272,7 @@
     font-size: 30px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #projects{
@@ -341,15 +350,17 @@
   }
 
   /* open project card */
-  /* #open-card{
+  #open-card{
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 20%;
-    left: 15%;
-    background-color: beige;
-    height: 66%;
-    width: 70%;
+    top: 10%;
+    left: 5%;
+    background-color: white;
+    height: 85%;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.2);
   }
 
   #card-close-icon{
@@ -357,37 +368,73 @@
     justify-content: flex-end;
     margin-top: 10px;
     margin-right: 10px;
-    color: black;
-    z-index: 100;
   }
 
   #open-card-details{
     display: flex;
+    height: 94%;
     width: 100%;
+    gap: 4%;
   }
 
   #open-card-image{
-    margin: 100px 30px;
+    display: flex;
+    margin: 0px 0px 2% 3%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 50%;
   }
 
   #open-card-image img{
-    display: block;
-    flex-grow: 2;
-    object-fit: cover;
     width: 100%;
-    height: 100%;
-    border-radius: 8px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20% 0px 20% 0px;
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.2);
   }
 
   #open-card-content{
-    display: block;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
-  } */
+    margin: 0px 5% 5% 0px;
+    justify-content: center;
+    width: 50%;
+  }
+
+  #open-card-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #E5D1D0;
+    font-family: "Lemon";
+    margin-bottom: 8%;
+  }
+
+  #open-card-description{
+    text-align: justify;
+    margin-bottom: 8%;
+  }
+
+  #open-card-stack{
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+    margin-bottom: 3%;
+  }
+
+  #open-card-git{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #open-card-git a{
+    color: #E5D1D0;
+  }
 
   /* Contact page */
   #contact-container{
     display: flex;
-    margin: 80px 160px;
+    margin: 100px 160px;
   }
 
   #contact{
@@ -402,10 +449,12 @@
     font-size: 30px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #contact-form{
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     width: 60%;
   }
@@ -438,7 +487,14 @@
     background-color: #E5D1D0;
     color: white;
     font-weight: bold;
+    font-size: 15px;
   }
+
+  #submit-alert{
+    display: flex;
+    justify-content: center;
+  }
+  
 } 
 
 
@@ -472,6 +528,10 @@
 
   /* navbar */
   #nav-bar{
+    display: none;
+  }
+
+  #nav-bar-small{
     display: none; /* here */
     align-items: center;
     flex-direction: column;
@@ -498,12 +558,16 @@
     position: fixed;
     display: sticky;
     color: white;
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
     z-index: 2;
   }
 
-  .nav-items{
+  .ant-float-btn-icon{
+    color: #696969 !important;
+  }
+
+  .nav-items-small{
     display: flex;
     justify-content: center;
     color: white;
@@ -513,7 +577,7 @@
   }
 
   /* CHANGE TO ON CLICK SINCE THIS IS IPAD */
-  .nav-items:hover{
+  .nav-items-small:hover{
     background-color: white;
     color: black;
     box-sizing: border-box;
@@ -634,6 +698,7 @@
     font-size: 25px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #about-body{
@@ -664,6 +729,7 @@
     font-size: 25px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #skills-filter select{
@@ -727,10 +793,6 @@
     margin: 0px 100px;
   }
 
-  #projects{
-    display: flex;
-  }
-
   #project-header{
     display: flex;
     justify-content: center;
@@ -738,12 +800,13 @@
     font-size: 25px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #projects{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
 
   #project-row{
@@ -815,6 +878,88 @@
     padding: 8px 40px;
   }
   
+  /* open project card */
+  #open-card{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 8%;
+    left: 5%;
+    background-color: white;
+    height: 85%;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.2);
+  }
+
+  #card-close-icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  #open-card-details{
+    display: flex;
+    height: 94%;
+    width: 100%;
+    gap: 4%;
+  }
+
+  #open-card-image{
+    display: flex;
+    margin: 6% 0px 8% 6%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 50%;
+  }
+
+  #open-card-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20% 0px 20% 0px;
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.2);
+  }
+
+  #open-card-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0px 5% 5% 0px;
+    justify-content: center;
+    width: 50%;
+  }
+
+  #open-card-title{
+    font-size: 23px;
+    font-weight: bold;
+    color: #E5D1D0;
+    font-family: "Lemon";
+    margin-bottom: 8%;
+  }
+
+  #open-card-description{
+    text-align: justify;
+    margin-bottom: 8%;
+  }
+
+  #open-card-stack{
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+    margin-bottom: 3%;
+  }
+
+  #open-card-git{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #open-card-git a{
+    color: #E5D1D0;
+  }
+
   /* Contact page */
   #contact-container{
     display: flex;
@@ -829,14 +974,18 @@
   }
 
   #contact-header{
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #contact-form{
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
   }
 
@@ -868,6 +1017,12 @@
     background-color: #E5D1D0;
     color: white;
     font-weight: bold;
+    font-size: 13px;
+  }
+
+  #submit-alert{
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -909,6 +1064,10 @@
 
   /* navbar */
   #nav-bar{
+    display: none;
+  }
+
+  #nav-bar-small{
     display: none; /* here */
     align-items: center;
     flex-direction: column;
@@ -934,12 +1093,16 @@
     position: fixed;
     display: sticky;
     color: white;
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
     z-index: 2;
   }
 
-  .nav-items{
+  .ant-float-btn-icon{
+    color: #696969 !important;
+  }
+
+  .nav-items-small{
     display: flex;
     justify-content: center;
     color: white;
@@ -1071,6 +1234,7 @@
     font-size: 20px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #about-body{
@@ -1101,6 +1265,7 @@
     font-size: 20px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #skills-filter select{
@@ -1164,10 +1329,6 @@
     margin: 0px 60px;
   }
 
-  #projects{
-    display: flex;
-  }
-
   #project-header{
     display: flex;
     justify-content: center;
@@ -1175,12 +1336,13 @@
     font-size: 20px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #projects{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 8px;
   }
 
   #project-row{
@@ -1252,6 +1414,87 @@
     padding: 8px 50px;
   }
 
+  /* open project card */
+  #open-card{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    background-color: white;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.2);
+  }
+
+  #card-close-icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  #open-card-details{
+    display: flex;
+    flex-direction: column;
+    height: 94%;
+    width: 100%;
+    gap: 4%;
+  }
+
+  #open-card-image{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  #open-card-image img{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20% 0px 20% 0px;
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.2);
+  }
+
+  #open-card-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    margin: 4% 10% 4% 10%;
+  }
+
+  #open-card-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #E5D1D0;
+    font-family: "Lemon";
+    margin-bottom: 4%;
+  }
+
+  #open-card-description{
+    text-align: justify;
+    margin-bottom: 4%;
+  }
+
+  #open-card-stack{
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+    margin-bottom: 2%;
+  }
+
+  #open-card-git{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #open-card-git a{
+    color: #E5D1D0;
+  }
+
   /* Contact page */
   #contact-container{
     display: flex;
@@ -1266,14 +1509,18 @@
   }
 
   #contact-header{
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: #E5D1D0;
+    font-family: "Lemon";
   }
 
   #contact-form{
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
   }
 
@@ -1305,5 +1552,11 @@
     background-color: #E5D1D0;
     color: white;
     font-weight: bold;
+    font-size: 10px;
+  }
+
+  #submit-alert{
+    display: flex;
+    justify-content: center;
   }
 }

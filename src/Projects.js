@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
+import { MenuOutlined, CloseOutlined, GithubOutlined } from '@ant-design/icons';
 
 const Projects = () => {
     const [projectCard, setProjectCard] = useState(false);
@@ -10,16 +10,16 @@ const Projects = () => {
           "projectpic": "probiotic-webdatabase.png",
           "projectname": "Probiotics Web Database",
           "projectbrief": "The purpose of this database is to serve as a source of information for both healthcare professionals and public to search up information regarding products containing probiotics.",
-          "projectdescription": "The purpose of this database is to serve as a source of information for both healthcare professionals and public to search up information regarding products containing probiotics.",
+          "projectdescription": "The probiotic web database compiles probiotic products available in Singapore as well as the clinical evidence on probiotics’ efficacy. It was developed to help healthcare professionals make appropriate evidence-based probiotic recommendations.",
           "projectstack": "HTML CSS Javascript PHP MySQL",
-          "projectgitlink": "/",
+          "projectgitlink": "https://github.com/christiinelim/probiotic-web-database",
           "id": 1
         },
         {
           "projectpic": "work-in-progress.png",
           "projectname": "Work in progress",
           "projectbrief": "To be updated...",
-          "projectdescription": "To be updated...",
+          "projectdescription": "The project card is to be updated...",
           "projectstack": "",
           "projectgitlink": "/",
           "id": 2
@@ -28,7 +28,7 @@ const Projects = () => {
           "projectpic": "work-in-progress.png",
           "projectname": "Work in progress",
           "projectbrief": "To be updated...",
-          "projectdescription": "To be updated...",
+          "projectdescription": "The project card is to be updated...",
           "projectstack": "",
           "projectgitlink": "/",
           "id": 3
@@ -37,7 +37,7 @@ const Projects = () => {
           "projectpic": "work-in-progress.png",
           "projectname": "Work in progress",
           "projectbrief": "To be updated...",
-          "projectdescription": "To be updated...",
+          "projectdescription": "The project card is to be updated...",
           "projectstack": "",
           "projectgitlink": "/",
           "id": 4
@@ -61,7 +61,7 @@ const Projects = () => {
                 <div className="project-card-brief">
                     {brief}
                 </div>
-                {/* { projectCard && selectedProject === title && (
+                { projectCard && selectedProject === title && (
                     <div id="open-card">
                         <div id="card-close-icon" onClick={() => handleCardClick(title)}><CloseOutlined /></div>
                         <div id="open-card-details">
@@ -69,14 +69,14 @@ const Projects = () => {
                                 <img src={require(`./images/project/${image}`)} />
                             </div>
                             <div id="open-card-content">
-                                <div id="open-card-writeup">{title}</div>
-                                <div id="open-card-writeup">{description}</div>
-                                <div id="open-card-writeup">{stack}</div>
-                                <div id="open-card-writeup">{git}</div>
+                                <div id="open-card-title">{title}</div>
+                                <div id="open-card-description">{description}</div>
+                                <div id="open-card-stack">{stack}</div>
+                                <div id="open-card-git"><a href={git}><GithubOutlined /></a></div>
                             </div>
                         </div>
                     </div>
-                )} */}
+                )}
             </div>
         );
     };

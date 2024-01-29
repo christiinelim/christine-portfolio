@@ -26,7 +26,7 @@ const Skills = () => {
         {
           "skillcategory": "front-end",
           "skillspic": "javascript.png",
-          "skillsname": "Javascript",
+          "skillsname": "JavaScript",
           "id": 4
         },
         {
@@ -42,7 +42,7 @@ const Skills = () => {
           "id": 6
         },
         {
-          "skillcategory": "working",
+          "skillcategory": "both",
           "skillspic": "nodejs.png",
           "skillsname": "NodeJS",
           "id": 7
